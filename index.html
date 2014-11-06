@@ -8,10 +8,9 @@
 </head>
 <body>
 	
-<div ng-controller="BooksController as bookctrl">
-	<h2>{{bookctrl.title}}</h2>
+<div ng-controller="BooksController">
 	<ul>
-		<li ng-repeat="book in bookctrl.books">
+		<li ng-repeat="book in books">
 			{{book.title}}
 		</li>
 	</ul>
