@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="library">
+<head>
+	<title>angular-data Demo</title>
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-data/dist/angular-data.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	
+<div ng-controller="BooksController as bookctrl">
+	<h2>{{bookctrl.title}}</h2>
+	<ul>
+		<li ng-repeat="book in bookctrl.books">
+			{{book.title}}
+		</li>
+	</ul>
+</div>
+
+</body>
+</html>
